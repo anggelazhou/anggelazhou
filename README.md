@@ -1,4 +1,4 @@
-### Hi there 👋 My name is Angela.
+### Hi there, my name is Angela 👋 Welcome to my page!
 
 <!--
 **anggelazhou/anggelazhou** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
