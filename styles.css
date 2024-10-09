@@ -1,0 +1,57 @@
+.container {
+    max-width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    text-align: left; 
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: -0.02em;
+}
+
+.greeting-text {
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+   
+}
+
+.angela-wave {
+  width: 300px;
+  transition: all ease-in-out 20s;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+@media (max-width: 480px) {
+    .about-grid {
+      grid-template-columns: 100%;
+    }
+  }
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+@media (max-width: 480px) {
+    .projects-grid {
+      grid-template-columns: 100%;
+    }
+  }
+
+.experiences-grid {
+    text-align: left;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
