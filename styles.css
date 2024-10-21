@@ -1,31 +1,74 @@
+.nav {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav div {
+  margin: 2vw;
+}
+
+.nav a {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000;
+  text-decoration: none;
+  margin: 10px;
+}
+
+
+.nav a img {
+  width: 35px;
+}
+
 .container {
-    max-width: 85%;
+    max-width: 80%;
     margin: 0 auto;
     text-align: center;
+    display: grid;
+    grid-template-rows: 100vh 70vh 80vh 90vh 30vh;
+    font-family: 'HK Grotesk';
+    font-style: normal;
+}
+
+.landing {
+  place-self: center;
+}
+
+[id] {
+  scroll-margin: 16.5vh;
 }
 
 h1 {
     text-align: left; 
-    font-family: 'HK Grotesk';
-    font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 52px;
     letter-spacing: -0.02em;
 }
 
 .greeting-text {
-    font-family: 'HK Grotesk';
-    font-style: normal;
     font-weight: 400;
-    font-size: 25px;
-    line-height: 33px;
-   
+    font-size: 18px;
+    line-height: 25px;
 }
+
+.intro {
+  font-weight: 550;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: -0.02em; 
+  }
 
 .angela-wave {
   width: 300px;
-  transition: all ease-in-out 20s;
 }
 
 .about-grid {
@@ -33,25 +76,170 @@ h1 {
     grid-template-columns: auto auto auto auto;
 }
 
-@media (max-width: 480px) {
-    .about-grid {
-      grid-template-columns: 100%;
-    }
-  }
+.about-grid div p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+}
 
+.about-grid div img {
+  width: 142px;
+}
+
+/* may need to remove later */
 .projects-grid {
     display: grid;
     grid-template-columns: auto auto auto;
 }
 
-@media (max-width: 480px) {
-    .projects-grid {
-      grid-template-columns: 100%;
-    }
-  }
-
 .experiences-grid {
     text-align: left;
     display: grid;
     grid-template-rows: auto auto auto auto;
+}
+
+.experience-column {
+  display: grid;
+  grid-template-columns: 10% 70% 20%;
+  margin-bottom: 5vh;
+}
+
+.experience-column img {
+  place-self: center;
+  width: 5vw;
+}
+
+.experience-column div {
+  align-self: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  margin-left: 3px;
+}
+
+h3 {
+  font-weight: 650;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw 3vw 1vw 3vw;
+  border: 3px solid #343434;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.logos {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+
+.logos div {
+  margin-left: 3vw;
+  align-self: center;
+}
+
+.logos div a {
+  text-decoration: none;
+  color: #000;
+}
+
+.logos img {
+  height: 30px;
+  width: 30px;
+}
+
+.contact p {
+  align-self: center;
+}
+
+.goodbye {
+  font-weight: 350;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+/* TODO: make nav responsive */
+@media (max-width: 480px) {
+  .container {
+    max-width: 90%;
+    grid-template-rows: auto auto auto auto auto;
+  }
+
+  h1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .greeting-text {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .angela-wave {
+    width: 100px; 
+  }
+
+  .intro {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .about-grid {
+    grid-template-columns: auto auto;
+  }
+
+  .about-grid div p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .about-grid div img {
+    width: 50px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 100%;
+  }
+
+  .logos {
+    grid-template-columns: auto auto auto;
+  }
+
+  .logos img {
+    height: 20px;
+    width: 20px; 
+  }
+
+  .experience-column img {
+    width: 30px;
+  }
+
+  .experience-column div {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  h3 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .contact {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .goodbye {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }

@@ -4,43 +4,57 @@
         <title>Angela's Portfolio</title>
         <link rel="icon" type="image/x-icon" href="/Users/angelazhou/Desktop/portfolio/images/angelalogoooo.jpg">
         <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
+
+    <div class="nav">
+        <div>
+            <a href="#landing"><img src="/Users/angelazhou/Desktop/portfolio/images/angelalogoooo.jpg"/></a>
+        </div>
+        <div>
+            <a href="#about">About</a></li>
+            <a href="#projects">Projects</a></li>
+            <a href="#experiences">Experiences</a></li>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
     <body>
         <div class="container">
-            <div>
+            <div id="landing" class="landing">
+                <br>
                 <p class="greeting-text">Hello, so glad you’re here! (✿◠‿◠)</p>
                 <img class="angela-wave"  src="/Users/angelazhou/Desktop/portfolio/images/angelawaveeee.jpg"/>
-                <p>I'm Angela Zhou - a recent UBC grad and a lifelong learner, interested in merging
+                <p class="intro">I'm <span style="color:#E9AE99;">Angela Zhou -</span> a recent UBC grad and a lifelong learner, interested in merging
                     <b>business and tech</b> 
                     to create impactful products. Currently seeking opportunities in 
                     <b>product management.</b>
                 </p>
             </div>
 
-            <div>
+            <div id="about">
                 <h1>About</h1>
                 <div class="about-grid">
                     <div>
                         <p>my values</p>
-                        <img width="142" src="/Users/angelazhou/Desktop/portfolio/images/values.png"/>
+                        <img src="/Users/angelazhou/Desktop/portfolio/images/values.png"/>
                     </div>
                     <div>
                         <p>my skills</p>
-                        <img width="142" src="/Users/angelazhou/Desktop/portfolio/images/skills.png"/>
+                        <img src="/Users/angelazhou/Desktop/portfolio/images/skills.png"/>
                     </div>
                     <div>
                         <p>things i love</p>
-                        <img width="142" src="/Users/angelazhou/Desktop/portfolio/images/thingsilove.png"/>
+                        <img src="/Users/angelazhou/Desktop/portfolio/images/thingsilove.png"/>
                     </div>
                     <div>
                         <p>fun facts</p>
-                        <img width="142" src="/Users/angelazhou/Desktop/portfolio/images/funfacts.png"/>
+                        <img src="/Users/angelazhou/Desktop/portfolio/images/funfacts.png"/>
                     </div>
                 </div>
             </div>
-
-            <div>
+            <div id="projects">
                 <h1>Projects</h1>
                 <div class="projects-grid">
                     <img src="https://via.placeholder.com/300"/>
@@ -49,35 +63,72 @@
                 </div>
             </div>
 
-            <div>
+            <div id="experiences">
                 <h1>Experiences</h1>
                 <div class="experiences-grid">
-                    <div>Bell</div>
-                    <div>Bell</div>
-                    <div>CIBC</div>
-                    <div>FirstScreen</div>
+                    <div class="experience-column">
+                        <img src="/Users/angelazhou/Desktop/portfolio/images/bell.png"/>
+                        <div>
+                            <h3 style="margin: 0px;">Bell</h3>
+                            <p style="margin: 0px;">Product Owner, Knowledge Management</p>
+                        </div>
+                        <div style="text-align: right;">Date</div>
+                    </div>
+                    <div class="experience-column">
+                        <img src="/Users/angelazhou/Desktop/portfolio/images/bell.png"/>
+                        <div>
+                            <h3 style="margin: 0px;">Bell</h3>
+                            <p style="margin: 0px;">Customer Experience, Marketing & Applied Technologies Intern</p>
+                        </div>
+                        <div style="text-align: right;">Date</div>
+                    </div>
+                    <div class="experience-column">
+                        <img src="/Users/angelazhou/Desktop/portfolio/images/cibc.png"/>
+                        <div>
+                            <h3 style="margin: 0px;">CIBC</h3>
+                            <p style="margin: 0px;">App Developer Intern</p>
+                        </div>
+                        <div style="text-align: right;">Date</div>
+                    </div>
+                    <div class="experience-column">
+                        <img src="/Users/angelazhou/Desktop/portfolio/images/firstscreen.png"/>
+                        <div>
+                            <h3 style="margin: 0px;">FirstScreen</h3>
+                            <p style="margin: 0px;">Business Analyst Intern</p>
+                        </div>
+                        <div style="text-align: right;">Date</div>
+                    </div>
                 </div>
             </div>
-
-            <div>
-                <h1>Contact</h1>
-                <p>Let’s connect! I’m always open to new experiences.</p>
+            <footer>
+                <div id="contact">
+                    <h1>Contact</h1>
+                    <div class="contact">
+                        <p><span style="color:#E9AE99;">Let’s connect!</span> I’m always open to new experiences.</p>
+                        <div class="logos">
+                            <div>
+                                <a href="https://www.linkedin.com/in/anggelazhou/" target="_blank">
+                                    <img src="/Users/angelazhou/Desktop/portfolio/images/linkedin.png"/><br>Linkedin
+                                </a>
+                            </div>
+                            <div>
+                                <a href="mailto: angelazhouqi@gmail.com" target="_blank">
+                                    <img src="/Users/angelazhou/Desktop/portfolio/images/email.png"/><br>Email
+                                </a>
+                            </div>
+                            <div>
+                            <a href="https://www.instagram.com/anggelazhou/?hl=en" target="_blank">
+                                    <img src="/Users/angelazhou/Desktop/portfolio/images/instagram.png"/><br>Instagram
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div>
-                    <div>
-                    <a href="https://www.linkedin.com/in/anggelazhou/">Linkedin</a>
-                    </div>
-                    <div>
-                        <a href="https://www.linkedin.com/in/anggelazhou/">Email</a>
-                    </div>
-                    <div>
-                    <a href="https://www.instagram.com/anggelazhou/?hl=en">Instagram</a>
-                    </div>
+                    <p class="goodbye">Thank you for stopping by! ⸜(｡˃ ᵕ ˂)⸝♡</p>
                 </div>
-            </div>
-
-            <div>
-                <p>Thank you for stopping by! ⸜(｡˃ ᵕ ˂)⸝♡</p>
-            </div>
+             </footer>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
