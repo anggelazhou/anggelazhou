@@ -35,45 +35,63 @@
             <div id="about">
                 <h1>About</h1>
                 <div class="about-grid">
-                    <button class="about-button">
+                    <div class="overlay" id="overlay"></div>
+                    
+                    <button data-modal-target="#values-modal" class="about-button">
                         <p>my values</p>
                         <img src="/Users/angelazhou/Desktop/portfolio/images/values.png"/>
                     </button>
-                    <div class="modal" id="modal">
+                    <div class="modal" id="values-modal">
                         <div class="modal-header">
                             <div>Title</div>
-                            <button>&times;</button>
+                            <button data-close-button>&times;</button>
                         </div>
                         <div class="modal-body">
                             Body wahoo
                         </div>
                     </div>
-                    <div class="overlay" id="overlay"></div>
 
-                    <button class="about-button">
+                    <button data-modal-target="#skills-modal" class="about-button">
                         <p>my skills</p>
                         <img src="/Users/angelazhou/Desktop/portfolio/images/skills.png"/>
                     </button>
-                    <!-- <div class="modal" id="modal">
+                    <div class="modal" id="skills-modal">
                         <div class="modal-header">
                             <div>Title</div>
-                            <button>&times;</button>
+                            <button data-close-button>&times;</button>
                         </div>
                         <div class="modal-body">
-                            Body wahoo
+                            Body wahoo.
                         </div>
                     </div>
-                    <div id="overlay"></div> -->
 
-                    <button class="about-button">
+                    <button data-modal-target="#love-modal" class="about-button">
                         <p>things i love</p>
                         <img src="/Users/angelazhou/Desktop/portfolio/images/thingsilove.png"/>
                     </button>
+                    <div class="modal" id="love-modal">
+                        <div class="modal-header">
+                            <div>Title</div>
+                            <button data-close-button>&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            Body wahoo?
+                        </div>
+                    </div>
 
-                    <button class="about-button">
+                    <button data-modal-target="#facts-modal" class="about-button">
                         <p>fun facts</p>
                         <img src="/Users/angelazhou/Desktop/portfolio/images/funfacts.png"/>
                     </button>
+                    <div class="modal" id="facts-modal">
+                        <div class="modal-header">
+                            <div>Title</div>
+                            <button data-close-button>&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            Body wahoo!
+                        </div>
+                    </div>
                 </div>
             </div>
 

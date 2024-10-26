@@ -100,6 +100,7 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
   border: 1px solid black;
   border-radius: 10px;
   z-index: 10;
@@ -149,6 +150,7 @@ h1 {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, .4);
+  transition: 200ms ease-in-out;
   pointer-events: none;
 }
 
@@ -308,7 +310,7 @@ h3 {
 /* TODO: make nav responsive */
 @media screen and (max-width: 480px) {
   .container {
-    grid-template-rows: 70vh 40vh 50vh 60vh 5vh;
+    grid-template-rows: 80vh 50vh 60vh 70vh 10vh;
   }
 
   h1 {
