@@ -42,8 +42,9 @@
   place-self: center;
 }
 
-[id] {
-  scroll-margin: 16.5vh;
+#landing, #about, #projects, #experiences, #contact {
+  max-width: 80vw;
+  scroll-margin: 17vh;
 }
 
 h1 {
@@ -72,19 +73,88 @@ h1 {
 }
 
 .about-grid {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
 
-.about-grid div p {
+.about-button {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+.about-grid button p {
   font-weight: 600;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: -0.02em;
 }
 
-.about-grid div img {
+.about-grid button img {
   width: 142px;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 800px;
+  max-width: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px 10px 0 0;
+  background-color: #EBEBEB;
+  box-shadow: 0 2px 0 #BFBFBF;
+  align-items: center;
+}
+
+.modal-header div {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+}
+
+.modal-header button {
+  cursor: pointer;
+  color: #fff;
+  background-color: #F84A4C;
+  border-color: #F84A4C;
+  border-radius: 50%;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+.overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .4);
+  pointer-events: none;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 /* may need to remove later */
@@ -167,11 +237,78 @@ h3 {
   line-height: 30px;
 }
 
+/* @media screen and (max-width: 950px) {
+ 
+ } */
+ 
+ 
+ @media screen and (max-width: 650px) {
+  h1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .greeting-text {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .angela-wave {
+    width: 250px; 
+  }
+
+  .intro {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .about-grid {
+    grid-template-columns: auto auto;
+  }
+
+  .about-grid button p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .about-grid button img {
+    width: 100px;
+  }
+
+  .logos img {
+    height: 20px;
+    width: 20px; 
+  }
+
+  .experience-column div {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .experience-column img {
+    width: 40px;
+  }
+
+  h3 {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .contact {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .goodbye {
+    font-size: 15px;
+    line-height: 25px;
+  }
+ }
+
 /* TODO: make nav responsive */
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .container {
-    max-width: 90%;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: 70vh 40vh 50vh 60vh 5vh;
   }
 
   h1 {
@@ -185,7 +322,7 @@ h3 {
   }
 
   .angela-wave {
-    width: 100px; 
+    width: 150px; 
   }
 
   .intro {
@@ -193,39 +330,26 @@ h3 {
     line-height: 25px;
   }
 
-  .about-grid {
-    grid-template-columns: auto auto;
-  }
-
-  .about-grid div p {
+  .about-grid button p {
     font-size: 15px;
     line-height: 20px;
   }
 
-  .about-grid div img {
-    width: 50px;
+  .about-grid button img {
+    width: 70px;
   }
 
   .projects-grid {
     grid-template-columns: 100%;
   }
 
-  .logos {
-    grid-template-columns: auto auto auto;
-  }
-
-  .logos img {
-    height: 20px;
-    width: 20px; 
+  .experience-column div {
+    font-size: 12px;
+    line-height: 12px;
   }
 
   .experience-column img {
     width: 30px;
-  }
-
-  .experience-column div {
-    font-size: 12px;
-    line-height: 15px;
   }
 
   h3 {

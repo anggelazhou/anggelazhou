@@ -4,8 +4,7 @@
         <title>Angela's Portfolio</title>
         <link rel="icon" type="image/x-icon" href="/Users/angelazhou/Desktop/portfolio/images/angelalogoooo.jpg">
         <link rel="stylesheet" href="styles.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     </head>
 
     <div class="nav">
@@ -36,24 +35,48 @@
             <div id="about">
                 <h1>About</h1>
                 <div class="about-grid">
-                    <div>
+                    <button class="about-button">
                         <p>my values</p>
                         <img src="/Users/angelazhou/Desktop/portfolio/images/values.png"/>
+                    </button>
+                    <div class="modal" id="modal">
+                        <div class="modal-header">
+                            <div>Title</div>
+                            <button>&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            Body wahoo
+                        </div>
                     </div>
-                    <div>
+                    <div class="overlay" id="overlay"></div>
+
+                    <button class="about-button">
                         <p>my skills</p>
                         <img src="/Users/angelazhou/Desktop/portfolio/images/skills.png"/>
+                    </button>
+                    <!-- <div class="modal" id="modal">
+                        <div class="modal-header">
+                            <div>Title</div>
+                            <button>&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            Body wahoo
+                        </div>
                     </div>
-                    <div>
+                    <div id="overlay"></div> -->
+
+                    <button class="about-button">
                         <p>things i love</p>
                         <img src="/Users/angelazhou/Desktop/portfolio/images/thingsilove.png"/>
-                    </div>
-                    <div>
+                    </button>
+
+                    <button class="about-button">
                         <p>fun facts</p>
                         <img src="/Users/angelazhou/Desktop/portfolio/images/funfacts.png"/>
-                    </div>
+                    </button>
                 </div>
             </div>
+
             <div id="projects">
                 <h1>Projects</h1>
                 <div class="projects-grid">
@@ -100,6 +123,7 @@
                     </div>
                 </div>
             </div>
+
             <footer>
                 <div id="contact">
                     <h1>Contact</h1>
@@ -127,8 +151,14 @@
                 <div>
                     <p class="goodbye">Thank you for stopping by! ⸜(｡˃ ᵕ ˂)⸝♡</p>
                 </div>
-             </footer>
+             </footer> 
         </div>
         <script src="script.js"></script>
+        <!-- <script>
+            function getWidth() {
+              alert('Viewport width = ' + window.getComputedStyle(document.body).width);
+            }
+            window.onresize = getWidth;
+          </script> -->
     </body>
 </html>
