@@ -84,18 +84,6 @@ h1 {
   background: none;
 }
 
-.about-button:hover {
-  animation: tilt-shaking 0.25s infinite;
-}
-
-@keyframes tilt-shaking {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(5deg); }
-  50% { transform: rotate(0eg); }
-  75% { transform: rotate(-5deg); }
-  100% { transform: rotate(0deg); }
-}
-
 .about-grid button p {
   font-weight: 600;
   font-size: 18px;
@@ -105,6 +93,18 @@ h1 {
 
 .about-grid button img {
   width: 142px;
+}
+
+.about-grid button img:hover {
+  animation: tilt-shaking 0.25s infinite;
+}
+
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
 }
 
 .values-grid {
