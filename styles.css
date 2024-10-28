@@ -84,18 +84,18 @@ h1 {
   background: none;
 }
 
-.about-grid button p {
+.about-button p {
   font-weight: 600;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: -0.02em;
 }
 
-.about-grid button img {
+.about-button img {
   width: 142px;
 }
 
-.about-grid button img:hover {
+.about-button img:hover {
   animation: tilt-shaking 0.25s infinite;
 }
 
