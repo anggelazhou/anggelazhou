@@ -38,6 +38,8 @@ function closeModal(modal) {
 }
 
 overlay.addEventListener("click", () => {
-  const currentModalsOpen = document.querySelector(".modal.active");
-  closeModal(currentModalsOpen);
+  const currentModalsOpen = document.querySelectorAll(".modal.active");
+  currentModalsOpen.forEach((modal) => {
+    closeModal(modal);
+  });
 });

@@ -4,6 +4,7 @@
         <title>Angela's Portfolio</title>
         <link rel="icon" type="image/x-icon" href="/Users/angelazhou/Desktop/portfolio/images/angelalogoooo.jpg">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     </head>
 
@@ -25,10 +26,11 @@
                 <br>
                 <p class="greeting-text">Hello, so glad you’re here! (✿◠‿◠)</p>
                 <img class="angela-wave"  src="/Users/angelazhou/Desktop/portfolio/images/angelawaveeee.jpg"/>
-                <p class="intro">I'm <span style="color:#E9AE99;">Angela Zhou -</span> a recent UBC grad and a lifelong learner, interested in merging
+                <p class="intro">I'm <span style="color:#E9AE99;">Angela Zhou -</span> a recent UBC grad passionate about merging
                     <b>business and tech</b> 
-                    to create impactful products. Currently seeking opportunities in 
-                    <b>product management.</b>
+                    to create impact and connect communities. I'm currently seeking opportunities in
+                    <b>product management</b>
+                    at companies with inspiring people and products.
                 </p>
             </div>
 
@@ -43,11 +45,19 @@
                     </button>
                     <div class="modal" id="values-modal">
                         <div class="modal-header">
-                            <div>Title</div>
+                            <div>My values</div>
                             <button data-close-button>&times;</button>
                         </div>
-                        <div class="modal-body">
-                            Body wahoo
+                        <div class="modal-body values-grid">
+                            <div class="value">Empathy</div>
+                            <div class="value">Integrity</div>
+                            <div class="value">Continous Learning</div>
+                            <img src="/Users/angelazhou/Desktop/portfolio/images/empathy.png"/>
+                            <img src="/Users/angelazhou/Desktop/portfolio/images/integrity.png"/>
+                            <img src="/Users/angelazhou/Desktop/portfolio/images/contlearning.png"/>
+                            <div class="value-desc">I strive to create supportive environments and appreciate diverse perspectives.</div>
+                            <div class="value-desc">I prioritize honesty and take ownership of my decisions.</div>
+                            <div class="value-desc">I’m committed to lifelong growth of my skills, knowledge and contributions to my community.</div>
                         </div>
                     </div>
 
@@ -61,7 +71,7 @@
                             <button data-close-button>&times;</button>
                         </div>
                         <div class="modal-body">
-                            Body wahoo.
+                            Empathy
                         </div>
                     </div>
 
@@ -71,11 +81,34 @@
                     </button>
                     <div class="modal" id="love-modal">
                         <div class="modal-header">
-                            <div>Title</div>
+                            <div>An informal list of things I love</div>
                             <button data-close-button>&times;</button>
                         </div>
-                        <div class="modal-body">
-                            Body wahoo?
+                        <div class="modal-body love-grid">
+                            <div class="love-grid-item">
+                                <p>time with family, friends & meeting new people who inspire me</p>
+                                <img src="/Users/angelazhou/Desktop/portfolio/images/friends.png"/>
+                            </div>
+                            <div class="love-grid-item">
+                                <p>opportunities for growth beyond my comfort zone</p>
+                                <img src="/Users/angelazhou/Desktop/portfolio/images/comfortzone.png"/>
+                            </div>
+                            <div class="love-grid-item">
+                                <p>travelling, especially to tropical places</p>
+                                <img src="/Users/angelazhou/Desktop/portfolio/images/travel.png"/>
+                            </div>
+                            <div class="love-grid-item">
+                                <p>spin class</p>
+                                <img src="/Users/angelazhou/Desktop/portfolio/images/spin.png"/>
+                            </div>
+                            <div class="love-grid-item">
+                                <p>curated playlists & live music</p>
+                                <img src="/Users/angelazhou/Desktop/portfolio/images/livemusic.png"/>
+                            </div>
+                            <div class="love-grid-item">
+                                <p>snoopy (and all things nostalgic)</p>
+                                <img src="/Users/angelazhou/Desktop/portfolio/images/snoopy.png"/>
+                            </div>
                         </div>
                     </div>
 
@@ -85,11 +118,23 @@
                     </button>
                     <div class="modal" id="facts-modal">
                         <div class="modal-header">
-                            <div>Title</div>
+                            <div>Random fun facts :)</div>
                             <button data-close-button>&times;</button>
                         </div>
-                        <div class="modal-body">
-                            Body wahoo!
+                        <div class="modal-body fun-facts-grid">
+                            <div style="align-self: center; font-size: 25px; padding-right: 10px;">👥</div>
+                            <div style="align-self: center; text-align: left;"><a style="font-weight: bold;">I’m passionate about fostering inclusive communities.</a> In university, I led 
+                                <a href="https://cmd-f-2024.devpost.com/" target="_blank">BC’s largest hackathon</a> celebrating underrepresented genders, 
+                                and I’m continuing this passion today by hosting events with <a href="https://bobatalks.com/" target="_blank">BobaTalks.</a>
+                            </div>
+                            <div style="align-self: center; font-size: 25px; padding-right: 10px;">🌏 </div>
+                            <div style="align-self: center; text-align: left; ">I love exploring - <a style="font-weight: bold;">I’ve travelled to 20 countries so far</a> and am eyeing the Philippines for my next trip.</div>
+                            <div style="align-self: center; font-size: 25px; padding-right: 10px;">🚴‍♀️</div>
+                            <div style="align-self: center; text-align: left;"><a style="font-weight: bold;">Staying active keeps me happy.</a> Currently, my favourite method is through
+                                <a href="https://www.milleniawalk.com/mw-edit/why-rhythm-cycling-should-be-your-new-favorite-workout-with-absolute-cycle" target="_blank">spinning</a> (I’m at 
+                                200 classes and counting).</div>
+                            <div style="align-self: center; font-size: 25px; padding-right: 10px;">👟 </div>
+                            <div style="align-self: center; text-align: left;"><a style="font-weight: bold;"></a>I’m training for my first 10K. If you have any tips, I’d love to hear them!</div>
                         </div>
                     </div>
                 </div>
@@ -97,10 +142,85 @@
 
             <div id="projects">
                 <h1>Projects</h1>
-                <div class="projects-grid">
-                    <img src="https://via.placeholder.com/300"/>
-                    <img src="https://via.placeholder.com/300"/>
-                    <img src="https://via.placeholder.com/300"/>
+                <div class="swiper projects-swiper">
+                    <div class="swiper-wrapper">
+                        <button data-modal-target="#project-1" class="swiper-slide">
+                            Slide 1
+                        </button>
+                        <button data-modal-target="#project-2" class="swiper-slide">
+                            Slide 2
+                        </button>
+                        <button data-modal-target="#project-3" class="swiper-slide">
+                            Slide 3
+                        </button>
+                        <button data-modal-target="#project-4" class="swiper-slide">
+                            Slide 4
+                        </button>
+                        <button data-modal-target="#project-5" class="swiper-slide">
+                            Slide 5
+                        </button>
+                        <button data-modal-target="#project-6" class="swiper-slide">
+                            Slide 6
+                        </button>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                
+                <div class="modal" id="project-1">
+                    <div class="modal-header">
+                        <div>Title</div>
+                        <button data-close-button>&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        Body wahoo
+                    </div>
+                </div>
+                <div class="modal" id="project-2">
+                    <div class="modal-header">
+                        <div>Title</div>
+                        <button data-close-button>&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        Body wahoo
+                    </div>
+                </div>
+                <div class="modal" id="project-3">
+                    <div class="modal-header">
+                        <div>Title</div>
+                        <button data-close-button>&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        Body wahoo
+                    </div>
+                </div>
+                <div class="modal" id="project-4">
+                    <div class="modal-header">
+                        <div>Title</div>
+                        <button data-close-button>&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        Body wahoo
+                    </div>
+                </div>
+                <div class="modal" id="project-5">
+                    <div class="modal-header">
+                        <div>Title</div>
+                        <button data-close-button>&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        Body wahoo
+                    </div>
+                </div>
+                <div class="modal" id="project-6">
+                    <div class="modal-header">
+                        <div>Title</div>
+                        <button data-close-button>&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        Body wahoo
+                    </div>
                 </div>
             </div>
 
@@ -172,6 +292,19 @@
              </footer> 
         </div>
         <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".projects-swiper", {
+              slidesPerView: "auto",
+              spaceBetween: 30,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"},
+            });
+          </script>
         <!-- <script>
             function getWidth() {
               alert('Viewport width = ' + window.getComputedStyle(document.body).width);

@@ -95,6 +95,59 @@ h1 {
   width: 142px;
 }
 
+.values-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.value {
+  font-weight: 550;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.values-grid img {
+  place-self: center;
+  width: 80px;
+  margin-top: 5px;
+}
+
+.value-desc {
+  align-self: center;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.love-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.love-grid-item {
+  margin: 10px;
+}
+
+.love-grid-item p {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.love-grid-item img {
+  width: 125px;
+  margin-top: 5px;
+}
+
+.fun-facts-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
 .modal {
   position: fixed;
   top: 50%;
@@ -107,6 +160,8 @@ h1 {
   background-color: white;
   width: 800px;
   max-width: 80%;
+  overflow: auto;
+
 }
 
 .modal.active {
@@ -152,6 +207,7 @@ h1 {
   background-color: rgba(0, 0, 0, .4);
   transition: 200ms ease-in-out;
   pointer-events: none;
+  z-index: 10;
 }
 
 .overlay.active {
@@ -159,10 +215,27 @@ h1 {
   pointer-events: all;
 }
 
-/* may need to remove later */
-.projects-grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
+.swiper {
+  width: 78vw;
+  height: 50vh;
+}
+
+.swiper-slide {
+  cursor: pointer;
+  border: none;
+  width: 400px !important;
+  background-color: #E9AE99;
+  opacity: 70%;
+  border-radius: 15px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #343434 !important;
+  height: 100px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #343434 !important;
 }
 
 .experiences-grid {
@@ -339,6 +412,14 @@ h3 {
 
   .about-grid button img {
     width: 70px;
+  }
+
+  .values-grid img {
+    display: none;
+  }
+
+  .love-grid-item img {
+    display: none;
   }
 
   .projects-grid {
