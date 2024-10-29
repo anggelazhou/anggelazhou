@@ -13,7 +13,7 @@
 }
 
 .nav a {
-  font-family: 'HK Grotesk';
+  font-family: 'Hanken Grotesk';
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -34,7 +34,7 @@
     text-align: center;
     display: grid;
     grid-template-rows: 100vh 70vh 80vh 90vh 30vh;
-    font-family: 'HK Grotesk';
+    font-family: 'Hanken Grotesk';
     font-style: normal;
 }
 
@@ -84,15 +84,27 @@ h1 {
   background: none;
 }
 
-.about-grid button p {
+.about-button p {
   font-weight: 600;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: -0.02em;
 }
 
-.about-grid button img {
+.about-button img {
   width: 142px;
+}
+
+.about-button img:hover {
+  animation: tilt-shaking 0.25s infinite;
+}
+
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
 }
 
 .values-grid {
