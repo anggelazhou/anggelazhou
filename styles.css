@@ -89,6 +89,7 @@ h1 {
   font-size: 18px;
   line-height: 30px;
   letter-spacing: -0.02em;
+  color: black;
 }
 
 .about-button img {
@@ -357,7 +358,6 @@ h3 {
   .about-grid button p {
     font-size: 15px;
     line-height: 25px;
-    color: #000000;
   }
 
   .about-grid button img {
