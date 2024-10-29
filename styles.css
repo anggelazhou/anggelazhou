@@ -134,6 +134,31 @@ h1 {
   margin: 0;
 }
 
+.skills-grid {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  text-align: left;
+}
+
+.skills-grid div {
+  margin: 2px;
+}
+
+.skill-title {
+  background-color: #E9AE99;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 2px;
+}
+
+.skills {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 2px;
+}
+
 .love-grid {
   display: grid;
   grid-template-columns: auto auto auto;
