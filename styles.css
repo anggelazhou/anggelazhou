@@ -239,6 +239,7 @@ h1 {
   background-color: #E9AE99;
   opacity: 70%;
   border-radius: 15px;
+  color: #000000;
 }
 
 .swiper-button-next, .swiper-button-prev {
@@ -356,6 +357,7 @@ h3 {
   .about-grid button p {
     font-size: 15px;
     line-height: 25px;
+    color: #000000;
   }
 
   .about-grid button img {
