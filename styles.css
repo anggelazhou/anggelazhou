@@ -268,10 +268,22 @@ h1 {
   color: #000000;
   display: grid !important;
   grid-template-rows: 15% min-content 12% auto !important;
+  transition-duration: 0.4s;
+}
+
+.swiper-slide:hover {
+  background-color: #e6bcad;
 }
 
 .swiper div {
   align-self: center;
+}
+
+.proj-name {
+  font-weight: 550;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 2px;
 }
 
 .swiper-slide img {
@@ -280,8 +292,32 @@ h1 {
   justify-self: center;
   max-width: 350px;
   border-radius: 10px;
+  box-shadow:  2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.proj-skills {
+  display: flex;
+  margin: 0 22px 0 22px;
+}
+
+.proj-skills div {
+  background-color: white;
+  margin: 5px;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 5px;
   box-shadow:  2px 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+.proj-desc {
+  margin: 5px 25px 0 25px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 550;
+  align-self: start !important;
+  text-align: left;
+}
+
 
 .swiper-button-next, .swiper-button-prev {
   color: #343434 !important;
@@ -295,6 +331,7 @@ h1 {
 .proj-modal {
   max-height: 75vh;
   overflow-y: auto;
+  text-align: left;
 }
 
 .experiences-grid {
