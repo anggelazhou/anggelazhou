@@ -195,7 +195,7 @@ h1 {
   transition: 200ms ease-in-out;
   border: 1px solid black;
   border-radius: 10px;
-  z-index: 10;
+  z-index: 17;
   background-color: white;
   width: 800px;
   max-width: 80%;
@@ -246,7 +246,7 @@ h1 {
   background-color: rgba(0, 0, 0, .4);
   transition: 200ms ease-in-out;
   pointer-events: none;
-  z-index: 10;
+  z-index: 16;
 }
 
 .overlay.active {
@@ -269,7 +269,7 @@ h1 {
   color: #000000;
   display: grid !important;
   grid-template-rows: 15% min-content 12% auto !important;
-  transition-duration: 0.4s;
+  /* transition-duration: 5s; */
 }
 
 .swiper-slide:hover {
